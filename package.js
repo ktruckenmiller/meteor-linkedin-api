@@ -1,21 +1,21 @@
 Package.describe({
-  name: 'khamoud:linkedin-api',
+  name: 'ktruckenmiller:linkedin-api',
   summary: ' Meteor wrapper for the linkedin api.',
   version: '1.0.0',
-  git: 'https://github.com/krishamoud/meteor-linkedin-api'
+  git: 'https://github.com/ktruckenmiller/meteor-linkedin-api'
 });
 
-Npm.depends({'node-linkedin': '0.3.4'});
+Npm.depends({'node-linkedin': '0.5.0'});
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.1');
-  api.addFiles('khamoud:linkedin-api.js', 'server');
+  api.addFiles('ktruckenmiller:linkedin-api.js', 'server');
   api.export('Linkedin');
 
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('khamoud:linkedin-api');
-  api.addFiles('khamoud:linkedin-api-tests.js');
+  api.use('ktruckenmiller:linkedin-api');
+  api.addFiles('ktruckenmiller:linkedin-api-tests.js');
 });
