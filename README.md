@@ -6,11 +6,11 @@ Thanks to [Hamza Waqas](https://github.com/ArkeologeN) for his [node-linkedin](h
 
 ### Getting Started
 
-Add `khamoud:linkedin-api` to your application's `.meteor/packages` file
+Add `ktruckenmiller:linkedin-api` to your application's `.meteor/packages` file
 
 Alternatively:
 ```
-meteor add khamoud:linkedin-api
+meteor add ktruckenmiller:linkedin-api
 ```
 
 Before invoking any endpoint, please get the instance ready with your access token.
